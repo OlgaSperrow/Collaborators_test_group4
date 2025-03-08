@@ -1,5 +1,3 @@
-
-
 const array = [10, 15, 8, 3, 6];
 //function changed original because I use copy of array
 function sortByDivisors(arr) {
