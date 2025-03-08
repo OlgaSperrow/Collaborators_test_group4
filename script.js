@@ -1,4 +1,3 @@
-
 function filterPrimes(arr) {
   return arr.filter((e) => {
     if (e < 2) return false;
@@ -12,11 +11,15 @@ function filterPrimes(arr) {
 console.log(filterPrimes([1, 2, 3, 4, 5, 6, 7, 8, 9]));
 
 
+
+
 function removeDuplicates(arr) {
     return [...new Set(arr)];
 
   
   console.log(filterPrimes([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+  
+  
   
 
 
@@ -41,6 +44,8 @@ const sortedArray = sortByDivisors(array);
 console.log("sorted array:", sortedArray);
 console.log("original:", array);
 
+  
+  
 function mostFrequent(arr) {
   const frequent = {};
   let maxFrequent = 0;
@@ -57,6 +62,8 @@ function mostFrequent(arr) {
 }
 
 console.log(mostFrequent([1, 2, 2, 3, 3, 3, 4]));
+  
+  
 
 function groupByParity(arr) {
   return arr.reduce(
@@ -71,11 +78,6 @@ function groupByParity(arr) {
 console.log(groupByParity([1, 2, 3, 4, 5, 6]));
 
 // { even: [2, 4, 6], odd: [1, 3, 5] }
-
-  const arr = [1, 2, 2, 3, 4, 4, 5];
-  console.log(removeDuplicates(arr));
-
-
 
 
 
