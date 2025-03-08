@@ -1,3 +1,4 @@
+
 function filterPrimes(arr) {
   return arr.filter((e) => {
     if (e < 2) return false;
@@ -9,6 +10,15 @@ function filterPrimes(arr) {
 }
 
 console.log(filterPrimes([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+
+
+function removeDuplicates(arr) {
+    return [...new Set(arr)];
+
+  
+  console.log(filterPrimes([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+  
+
 
 const array = [10, 15, 8, 3, 6];
 //function changed original because I use copy of array
@@ -61,3 +71,22 @@ function groupByParity(arr) {
 console.log(groupByParity([1, 2, 3, 4, 5, 6]));
 
 // { even: [2, 4, 6], odd: [1, 3, 5] }
+
+  const arr = [1, 2, 2, 3, 4, 4, 5];
+  console.log(removeDuplicates(arr));
+
+
+
+
+  function filterPrimes(arr) {
+    return arr.filter((e) => {
+      if (e < 2) return false;
+      for (let i = 2; i < e; i++) {
+        if (e % i === 0) return false;
+      }
+      return true;
+    });
+  }
+  
+  console.log(filterPrimes([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+
