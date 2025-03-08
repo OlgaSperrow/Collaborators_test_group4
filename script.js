@@ -1,13 +1,7 @@
 
-function filterPrimes(arr) {
-    return arr.filter((e) => {
-      if (e < 2) return false;
-      for (let i = 2; i < e; i++) {
-        if (e % i === 0) return false;
-      }
-      return true;
-    });
-  }
+function removeDuplicates(arr) {
+    return [...new Set(arr)];
+
   
   console.log(filterPrimes([1, 2, 3, 4, 5, 6, 7, 8, 9]));
   
@@ -56,4 +50,7 @@ function mostFrequent(arr) {
 console.log(mostFrequent([1, 2, 2, 3, 3, 3, 4]));
      
 
+
+  const arr = [1, 2, 2, 3, 4, 4, 5];
+  console.log(removeDuplicates(arr));
 
