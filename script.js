@@ -7,9 +7,6 @@ function removeDuplicates(arr) {
   
 
 
-
-
-
 const array = [10, 15, 8, 3, 6];
 //function changed original because I use copy of array
 function sortByDivisors(arr) {
@@ -53,4 +50,5 @@ console.log(mostFrequent([1, 2, 2, 3, 3, 3, 4]));
 
   const arr = [1, 2, 2, 3, 4, 4, 5];
   console.log(removeDuplicates(arr));
+
 
